@@ -1,0 +1,37 @@
+<h1>student component</h1>
+<!-- {{msg}} -->
+<div>
+    <!-- to show only h1 tag -->
+    <ng-content select="h1">
+    </ng-content>
+
+    <!-- to show paragraph -->
+    <ng-content select="p">
+    </ng-content>
+
+    <!-- to show only button -->
+    <ng-content select="button">
+    </ng-content>
+    <hr>
+
+
+    <!-- to show specific paragraph using class  -->
+    <h3>to show input control using class</h3>
+    <ng-content select=".p2">
+    </ng-content>
+
+    <!-- to show input control using class -->
+    <h3>to show input control using class</h3>
+    <ng-content select=".btn">
+    </ng-content>
+
+    <!-- to show input control using attribute  -->
+    <h3>to show input control using attribute</h3>
+    <ng-content select="[name]">
+    </ng-content>
+
+    <h3>to show heading with id selector</h3>
+    <ng-content select="[id=heading]">
+    </ng-content>
+
+</div>
